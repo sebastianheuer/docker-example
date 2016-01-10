@@ -1,0 +1,32 @@
+web:
+  build: ./nginx/
+  links:
+    - app
+  ports:
+    - "80:80"
+  volumes_from:
+    - app
+
+app:
+  build: ./meetup-service
+  links:
+    - db
+  ports:
+    - "9000:9000"
+  volumes:
+    - ./meetup-service:/usr/share/nginx/html
+  environment:
+    - MYSQL_HOST=db
+    - MYSQL_DATABASE=app
+    - MYSQL_USER=root
+    - MYSQL_PASSWORD=docker
+
+db:
+  image: mysql:5.7
+  volumes:
+    - /var/lib/mysql
+  ports:
+    - "3306:3306"
+  environment:
+    - MYSQL_ROOT_PASSWORD=docker
+    - MYSQL_DATABASE=app

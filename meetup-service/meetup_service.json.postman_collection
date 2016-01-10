@@ -1,0 +1,208 @@
+{
+	"id": "37a18031-b660-3aed-c39e-dae8297c25e6",
+	"name": "Meetup Service",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "de6b9733-471a-6d2e-5a21-8fd385da3e6f",
+			"name": "/meetups",
+			"description": "",
+			"order": [
+				"01d512cd-7769-0d81-2b7a-688c11b981dc",
+				"349a3236-d748-e78e-2239-afc9c7c826b1",
+				"c8c20c34-818e-b732-c3e9-96840034895c"
+			],
+			"owner": "239917"
+		},
+		{
+			"id": "2f563906-a335-0011-e302-fa17de56bcef",
+			"name": "/members",
+			"description": "",
+			"order": [
+				"4572aab0-c1ed-bf30-a727-f15b8aad0385",
+				"3c411963-5722-7e01-6b34-33d098100858"
+			],
+			"owner": "239917",
+			"collectionId": "37a18031-b660-3aed-c39e-dae8297c25e6"
+		}
+	],
+	"timestamp": 1452454296190,
+	"owner": "239917",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "01d512cd-7769-0d81-2b7a-688c11b981dc",
+			"headers": "",
+			"url": "http://192.168.99.100/meetups",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "Some Other Meetup",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "date",
+					"value": "2016-02-14 17:30",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "capacity",
+					"value": "50",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1452605730686,
+			"name": "add meetup",
+			"description": "",
+			"collectionId": "37a18031-b660-3aed-c39e-dae8297c25e6",
+			"responses": []
+		},
+		{
+			"id": "349a3236-d748-e78e-2239-afc9c7c826b1",
+			"headers": "",
+			"url": "http://192.168.99.100/meetups",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "title",
+					"value": "Some Meetup",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "date",
+					"value": "2016-01-12 17:30",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "capacity",
+					"value": "60",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1452540343101,
+			"name": "list meetups",
+			"description": "",
+			"collectionId": "37a18031-b660-3aed-c39e-dae8297c25e6",
+			"responses": []
+		},
+		{
+			"id": "3c411963-5722-7e01-6b34-33d098100858",
+			"headers": "",
+			"url": "http://192.168.99.100/members",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "title",
+					"value": "Some Meetup",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "date",
+					"value": "2016-01-12 17:30",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "capacity",
+					"value": "60",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1452540363003,
+			"name": "list members",
+			"description": "",
+			"collectionId": "37a18031-b660-3aed-c39e-dae8297c25e6",
+			"responses": []
+		},
+		{
+			"id": "4572aab0-c1ed-bf30-a727-f15b8aad0385",
+			"headers": "",
+			"url": "http://192.168.99.100/members",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "John Doe",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "john@example.com",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1452540414345,
+			"name": "add member",
+			"description": "",
+			"collectionId": "37a18031-b660-3aed-c39e-dae8297c25e6",
+			"responses": []
+		},
+		{
+			"id": "c8c20c34-818e-b732-c3e9-96840034895c",
+			"headers": "",
+			"url": "http://192.168.99.100/meetups/53f4c09ca309b708601d1ad6f73da9cea4a2ed78/rsvps/5a221c9b80c92024e24cef40efbf56cb27dffa53",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "rsvp",
+					"value": "yes",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1452605650020,
+			"name": "rsvp",
+			"description": "",
+			"collectionId": "37a18031-b660-3aed-c39e-dae8297c25e6",
+			"responses": []
+		}
+	]
+}
