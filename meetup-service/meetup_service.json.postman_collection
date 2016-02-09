@@ -42,19 +42,19 @@
 			"data": [
 				{
 					"key": "title",
-					"value": "Some Other Meetup",
+					"value": "Awesome Meetup",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "date",
-					"value": "2016-02-14 17:30",
+					"value": "2016-03-20 17:30",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "capacity",
-					"value": "50",
+					"value": "70",
 					"type": "text",
 					"enabled": true
 				}
@@ -64,7 +64,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1452605730686,
+			"time": 1455018300655,
 			"name": "add meetup",
 			"description": "",
 			"collectionId": "37a18031-b660-3aed-c39e-dae8297c25e6",
@@ -156,13 +156,13 @@
 			"data": [
 				{
 					"key": "name",
-					"value": "John Doe",
+					"value": "Jane Doe",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "email",
-					"value": "john@example.com",
+					"value": "jane@example.com",
 					"type": "text",
 					"enabled": true
 				}
@@ -172,7 +172,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1452540414345,
+			"time": 1455018281197,
 			"name": "add member",
 			"description": "",
 			"collectionId": "37a18031-b660-3aed-c39e-dae8297c25e6",
