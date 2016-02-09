@@ -14,7 +14,7 @@ app:
   ports:
     - "9000:9000"
   volumes:
-    - ./meetup-service:/usr/share/nginx/html
+    - ./meetup-service:/srv/meetup-service
   environment:
     - MYSQL_HOST=db
     - MYSQL_DATABASE=app
