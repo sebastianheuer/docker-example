@@ -18,3 +18,7 @@ Contains a sample PHP application that can be run in a Docker container.
 ```
 
 If you are on a Mac, you need to use the IP address of your Docker machine, which usually is ```192.168.99.100```.
+
+## Using the API
+
+If you want to play around with the API you can import ```/meetup-service/meetup_service.json.postman_collection``` into [Postman](https://www.getpostman.com/) to get a complete list of available requests that can be executed right away.
