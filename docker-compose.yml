@@ -1,32 +1,31 @@
-web:
-  build: ./nginx/
-  links:
-    - app
-  ports:
-    - "80:80"
-  volumes_from:
-    - app
+version: '3'
 
-app:
-  build: ./meetup-service
-  links:
-    - db
-  ports:
-    - "9000:9000"
-  volumes:
-    - ./meetup-service:/srv/meetup-service
-  environment:
-    - MYSQL_HOST=db
-    - MYSQL_DATABASE=app
-    - MYSQL_USER=root
-    - MYSQL_PASSWORD=docker
-
-db:
-  image: mysql:5.7
-  volumes:
-    - /var/lib/mysql
-  ports:
-    - "3306:3306"
-  environment:
-    - MYSQL_ROOT_PASSWORD=docker
-    - MYSQL_DATABASE=app
+services:
+  web:
+    build: ./nginx/
+    depends_on:
+      - app
+    ports:
+      - "80:80"
+  app:
+    build: ./meetup-service
+    depends_on:
+      - db
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./meetup-service:/srv/meetup-service
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_DATABASE=app
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=docker
+  db:
+    image: mysql:5.7
+    volumes:
+      - /var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=docker
+      - MYSQL_DATABASE=app
